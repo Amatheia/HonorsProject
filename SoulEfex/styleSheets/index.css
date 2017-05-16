@@ -1,0 +1,284 @@
+/* April A  02/18/2016  */
+
+/* Display HTML5 structural elements as blocks */
+header, footer, nav, aside, section, article  {
+       display: block;
+}
+
+/* Set the default page element styles */
+
+
+body  {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video { 
+  display: block;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .bgvid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bgvid {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .bgvid {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bgvid {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+div#wrapperHeader {
+  width: 100%;
+  height: 200px;
+  margin:0 auto;
+  padding-bottom: 10px;
+  border-top-color: #3A3838;
+  border-top-style: solid;
+  border-top-width: 10px;
+}
+
+div#titleLogo img {
+  width: 525px;
+  height: 170px;
+  float: left;
+  display: inline;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  margin:0 auto;
+}
+
+#navBar   {
+    display: block;
+    position: absolute;
+    right: 5%;
+    margin-right: 10px;
+    margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+.navBar {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  padding: 5px;
+  font-size: 150%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+	padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.header-social-icons {
+  margin: 0 auto;
+  position: absolute;
+  right: 1%;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+ul.social-icons {	
+	margin-top: 10px;
+}
+
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+}
+
+h1 {
+  text-align: center;    
+}
+
+h2 {
+  width: 100%;
+  height: 30px;
+  text-shadow: 1px 1px 1px darkgray;
+  text-align: center;
+}
+
+#tagline {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 10px;
+  padding: 10px;
+}
+
+#welcome {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  color: white;
+}
+
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+form label {
+  display: inline-block;
+  width: 140px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+td.label {
+  font-weight: bold;
+}
+
+p {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.submit {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+textarea { 
+  vertical-align: top; 
+}
+
+.formrow {
+  padding-left: 220px;
+}
+
+div.formrow span { 
+  position: absolute; 
+  width: 50%; 
+  margin-top: 25px;
+}
+
+.center {
+  text-align: center;
+} 
+
+#requirements {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.navibar {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-size: 18px;
+  background-color: #5B3C89;
+}
+
+.navibar a {
+  color: white;
+}
+
+.navibar a:hover {
+  color: yellow;
+}
+
+#mission {
+  color: white;
+  padding: 10px;
+  margin-right: 200px;
+  margin-left: 200px;
+  font-size: 14px;
+}
