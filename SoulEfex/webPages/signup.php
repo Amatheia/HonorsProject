@@ -120,7 +120,7 @@
   <div id ="setHeight">
     <div class="center">
       <p>Please enter your username and password to sign up.</p>
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'];)?>">
         <fieldset>
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" 
