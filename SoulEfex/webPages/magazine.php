@@ -154,7 +154,7 @@
     if ($output_form == 'yes') {
 ?>
   <div class="formrow">
-  <form enctype="multipart/form-data" id="submit" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+  <form enctype="multipart/form-data" id="submit" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'];)?>">
     <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo SE_MAXFILESIZE; ?>" />
       <label for="submissiontype">Submission Type:</label>
       <select id="submissiontype" name="submissiontype">
