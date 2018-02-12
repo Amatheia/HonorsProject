@@ -85,7 +85,7 @@
   <br />
   <div id="setHeightProfile">
     <div class="center">
-      <form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <form enctype="multipart/form-data" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'];)?>">
         <label for="firstname">First name:</label>
         <input type="text" id="firstname" name="firstname" value="<?php if (!empty($first_name)) echo $first_name; ?>" /><br />
         <label for="lastname">Last name:</label>
